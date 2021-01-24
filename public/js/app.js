@@ -1,5 +1,3 @@
-console.log('Client side is always on your side')
-
 const weatherForm = document.querySelector('form')
 const searchElement = document.querySelector('input')
 const message1 = document.querySelector('#message1')
@@ -13,7 +11,7 @@ weatherForm.addEventListener('submit', (e) =>{
 
     message1.textContent = 'Loading......'
     message2.textContent = ''
-    
+
     const location = searchElement.value
     const myurl = 'http://localhost:3000/weather?address='+location
 
