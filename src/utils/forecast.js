@@ -14,9 +14,9 @@ request({url, json:true}, (error, {body}) => {
     }
     else {
         callback(undefined, 
-            body.current.weather_descriptions[0]+' with a temperature of: '+
+            'Today it is '+body.current.weather_descriptions[0]+' with a temperature of: '+
             body.current.temperature+ ' which feels like '+
-            body.current.feelslike
+            body.current.feelslike+' But wait wait the wind speed is.....wait for it '+body.current.wind_speed
         )
     }
 })
